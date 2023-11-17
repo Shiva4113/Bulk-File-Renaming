@@ -48,7 +48,7 @@ function rename_file() {
 }
 
 read USN PWD DIR
-myUSN="PES2UG22CS525"
+myUSN="PES_UG__CS___"
 EXT="*.png"
 reverse_PWD=$(reverse_string "$PWD")
 
