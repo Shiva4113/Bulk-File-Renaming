@@ -41,15 +41,15 @@ function rename_file() {
     do
         initial=$(basename "$file")
         final=$(dirname "$file")
-        renamed="${final}/${initial%$ext}.pNg"
+        renamed="${final}/${initial%$ext}.png"
         mv "$file" "$renamed"
         echo "Changed: $file to $renamed"
     done
 }
 
 read USN PWD DIR
-myUSN="PES2UG22CS525"
-EXT="*.png"
+myUSN="PES_US__CS___"
+EXT="*.pNg"
 reverse_PWD=$(reverse_string "$PWD")
 
 if test "$USN" = "$myUSN"; 
